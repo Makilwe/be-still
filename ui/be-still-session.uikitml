@@ -1,0 +1,89 @@
+<!--
+  Be Still guided session panel. UIKitML: HTML/CSS-shaped, not a browser engine.
+  Sizes are UIKit units (centimetres). Single-sided, faces +Z. Shown only
+  while a session runs; SessionSystem drives its text and buttons.
+  Note: no em-dash characters — the panel font has no glyph for them.
+-->
+<style>
+  .session-root {
+    flex-direction: column;
+    align-items: center;
+    width: 96;
+    background-color: #0f2b30;
+    border-radius: 3;
+  }
+
+  .session-inner {
+    flex-direction: column;
+    align-items: center;
+    width: 96;
+    background-color: #0f2b30;
+    border-radius: 3;
+    padding-top: 5;
+    padding-bottom: 5;
+    padding-left: 5;
+    padding-right: 5;
+  }
+
+  .session-title {
+    font-size: 4;
+    font-weight: 700;
+    color: #f5ead6;
+    text-align: center;
+    margin-top: 3;
+  }
+
+  .session-phase {
+    font-size: 3.2;
+    color: #f5ead6;
+    text-align: center;
+    width: 86;
+    margin-top: 5;
+    margin-bottom: 5;
+  }
+
+  .button-row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4;
+    margin-bottom: 3;
+  }
+
+  .end-button {
+    width: 34;
+    background-color: #1e4a4f;
+    border-radius: 2;
+    padding-top: 2.4;
+    padding-bottom: 2.4;
+  }
+
+  .return-button {
+    width: 34;
+    background-color: #b8862f;
+    border-radius: 2;
+    padding-top: 2.4;
+    padding-bottom: 2.4;
+    display: none;
+  }
+
+  .button-label {
+    font-size: 2.8;
+    color: #f5ead6;
+    text-align: center;
+  }
+</style>
+<Panel class="session-root">
+  <div class="session-inner">
+    <div id="session-title" class="session-title">Morning Peace</div>
+    <div id="session-phase-text" class="session-phase">Good morning. Come, rest a while.</div>
+    <div class="button-row">
+      <Button id="session-end" class="end-button">
+        <ButtonLabel class="button-label">End</ButtonLabel>
+      </Button>
+      <Button id="session-return" class="return-button">
+        <ButtonLabel class="button-label">Return</ButtonLabel>
+      </Button>
+    </div>
+  </div>
+</Panel>
