@@ -1,0 +1,83 @@
+<!--
+  Be Still session menu. UIKitML: HTML/CSS-shaped, not a browser engine.
+  Sizes are UIKit units (centimetres). The panel is single-sided and faces +Z,
+  so it is placed looking back at the player.
+-->
+<style>
+  .menu-root {
+    flex-direction: column;
+    align-items: center;
+    width: 100;
+    background-color: #0f2b30;
+    border-radius: 3;
+  }
+
+  .menu-inner {
+    flex-direction: column;
+    align-items: center;
+    width: 100;
+    background-color: #0f2b30;
+    border-radius: 3;
+    padding-top: 6;
+    padding-bottom: 6;
+    padding-left: 6;
+    padding-right: 6;
+  }
+
+  .title {
+    font-size: 4.5;
+    font-weight: 700;
+    color: #f5ead6;
+    text-align: center;
+    margin-top: 4;
+  }
+
+  .subtitle {
+    font-size: 2.2;
+    color: #d9c9a8;
+    text-align: center;
+    width: 88;
+    margin-top: 2;
+    margin-bottom: 4;
+  }
+
+  .session-button {
+    width: 84;
+    margin-top: 2;
+    margin-bottom: 2;
+    background-color: #1e4a4f;
+    border-radius: 2;
+    padding-top: 3;
+    padding-bottom: 3;
+  }
+
+  .session-button-label {
+    font-size: 3;
+    color: #f5ead6;
+    text-align: center;
+  }
+
+  .status {
+    font-size: 2.2;
+    color: #e8b64c;
+    text-align: center;
+    width: 88;
+    margin-top: 4;
+  }
+</style>
+<Panel class="menu-root">
+  <div class="menu-inner">
+  <div class="title">Be Still</div>
+  <div class="subtitle">Be still, and know that I am God. — Psalm 46:10</div>
+  <Button id="session-morning" class="session-button">
+    <ButtonLabel class="session-button-label">Morning Peace</ButtonLabel>
+  </Button>
+  <Button id="session-night" class="session-button">
+    <ButtonLabel class="session-button-label">Night Peace</ButtonLabel>
+  </Button>
+  <Button id="session-psalm" class="session-button">
+    <ButtonLabel class="session-button-label">A Psalm for You</ButtonLabel>
+  </Button>
+  <div id="session-status" class="status">Choose a session to begin.</div>
+  </div>
+</Panel>
